@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>فروشگاه پسته‌فروش</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">پسته‌فروش</div>
+    <button id="menu-toggle" class="hamburger">☰</button>
+    <nav id="main-nav" class="nav hidden">
+      <ul>
+        <li><a href="#products">محصولات</a></li>
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#help">راهنما</a></li>
+        <li><a href="#cart">سبد خرید 🛒<span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>خوش اومدید به فروشگاه تخصصی پسته ایران</h1>
+    <p>خرید آنلاین انواع پسته صادراتی با بهترین قیمت و کیفیت</p>
+  </section>
+
+  <main id="products" class="products">
+    <h2>محصولات ما</h2>
+    <div class="product-list">
+      <!-- نمونه محصولات -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/9ZQZ1Zy.png" alt="پسته اکبری" class="product-image"/>
+        <h3>پسته اکبری</h3>
+        <p>220000 تومان</p>
+        <button class="add-to-cart" data-title="پسته اکبری" data-price="220000">افزودن به سبد خرید</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/YTxIMbL.png" alt="پسته احمدآقایی" class="product-image"/>
+        <h3>پسته احمدآقایی</h3>
+        <p>190000 تومان</p>
+        <button class="add-to-cart" data-title="پسته احمدآقایی" data-price="190000">افزودن به سبد خرید</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/Fqx14jz.png" alt="پسته کله قوچی" class="product-image"/>
+        <h3>پسته کله قوچی</h3>
+        <p>210000 تومان</p>
+        <button class="add-to-cart" data-title="پسته کله قوچی" data-price="210000">افزودن به سبد خرید</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/q3kYi9j.png" alt="پسته فندقی" class="product-image"/>
+        <h3>پسته فندقی</h3>
+        <p>180000 تومان</p>
+        <button class="add-to-cart" data-title="پسته فندقی" data-price="180000">افزودن به سبد خرید</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/vJOzoLG.png" alt="پسته شور" class="product-image"/>
+        <h3>پسته شور</h3>
+        <p>230000 تومان</p>
+        <button class="add-to-cart" data-title="پسته شور" data-price="230000">افزودن به سبد خرید</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/8AxJSUn.png" alt="پسته خام صادراتی" class="product-image"/>
+        <h3>پسته خام صادراتی</h3>
+        <p>250000 تومان</p>
+        <button class="add-to-cart" data-title="پسته خام صادراتی" data-price="250000">افزودن به سبد خرید</button>
+      </div>
+    </div>
+  </main>
+
+  <section id="cart" class="cart-section hidden">
+    <h2>سبد خرید شما</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <p>مجموع: <span id="cart-total">۰</span> تومان</p>
+      <button id="checkout">تسویه حساب</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© تمامی حقوق برای پسته‌فروش محفوظ است</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
